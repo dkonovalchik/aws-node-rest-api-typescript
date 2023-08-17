@@ -10,8 +10,6 @@ dotenv.config({
 import { books } from './model';
 import { BooksController } from './controller/books';
 
-console.log('process.env:', process.env);
-
 const booksController = new BooksController(books);
 
 export const create: Handler = (event: any, context: Context) => {
